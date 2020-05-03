@@ -1,0 +1,29 @@
+[debug] [2020-05-02T03:04:56.322Z] ----------------------------------------------------------------------
+[debug] [2020-05-02T03:04:56.324Z] Command:       D:\software\node\node.exe C:\Users\Jona\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2020-05-02T03:04:56.324Z] CLI Version:   7.8.1
+[debug] [2020-05-02T03:04:56.324Z] Platform:      win32
+[debug] [2020-05-02T03:04:56.324Z] Node Version:  v12.16.2
+[debug] [2020-05-02T03:04:56.326Z] Time:          Sat May 02 2020 00:04:56 GMT-0300 (GMT-03:00)
+[debug] [2020-05-02T03:04:56.326Z] ----------------------------------------------------------------------
+[debug] [2020-05-02T03:04:56.326Z] 
+[debug] [2020-05-02T03:04:56.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-02T03:04:56.338Z] > authorizing via signed-in user
+[debug] [2020-05-02T03:04:56.338Z] [iam] checking project instacool-c392d for permissions ["firebase.projects.get"]
+[debug] [2020-05-02T03:04:56.339Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-c392d:testIamPermissions  
+
+[debug] [2020-05-02T03:04:57.745Z] <<< HTTP RESPONSE 200
+[debug] [2020-05-02T03:04:57.751Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/instacool-c392d  
+ 
+[debug] [2020-05-02T03:04:59.066Z] <<< HTTP RESPONSE 200
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "D:\trabajos\wamp64\www\udemy\instacool\functions" for Cloud Functions...
+[debug] [2020-05-02T03:05:01.677Z] [worker-~diagnostic~-36619037-283a-4c84-9c3b-6c502dd7b192]: Assigning socketPath: \\?\pipe\D:\trabajos\wamp64\www\udemy\instacool\functions\24840
+[debug] [2020-05-02T03:05:01.677Z] [worker-~diagnostic~-36619037-283a-4c84-9c3b-6c502dd7b192]: BUSY
+[debug] [2020-05-02T03:05:02.121Z] [runtime-status] [24840] Functions runtime initialized. {"cwd":"D:\\trabajos\\wamp64\\www\\udemy\\instacool\\functions","node_version":"12.16.2"}
+[debug] [2020-05-02T03:05:02.122Z] [runtime-status] [24840] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T03:05:02.125Z] [runtime-status] [24840] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"D:\\trabajos\\wamp64\\www\\udemy\\instacool\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T03:05:02.127Z] [runtime-status] [24840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\trabajos\\wamp64\\www\\udemy\\instacool\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T03:05:02.128Z] [runtime-status] [24840] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\trabajos\\wamp64\\www\\udemy\\instacool\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T03:05:02.306Z] [worker-~diagnostic~-36619037-283a-4c84-9c3b-6c502dd7b192]: exited
+[debug] [2020-05-02T03:05:02.307Z] [worker-~diagnostic~-36619037-283a-4c84-9c3b-6c502dd7b192]: FINISHED

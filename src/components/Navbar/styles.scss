@@ -1,0 +1,29 @@
+#navbar{
+    // border-bottom: solid 1px #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.1);
+    ul{
+        padding: 0 15px 0 0;
+        margin: auto 0;
+        display: flex;
+        li{
+            list-style: none;
+            flex: 1;
+            margin: 5px;
+            a{
+                display: flex;
+                text-decoration: none;
+                padding: 5px;
+                svg{
+                    margin: auto 5px auto 0;
+                }
+                span{
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}
