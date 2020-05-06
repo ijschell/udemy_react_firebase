@@ -1,0 +1,15 @@
+#profile{
+    padding: 10px;
+    > div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerfeeds{
+        flex-wrap: wrap;
+        margin-top: 15px;
+        > div{
+            width: 29%;
+            margin: 0 auto 15px auto;
+        }
+    }
+}

@@ -15,7 +15,7 @@ export default class Register extends Component {
                     <Title>Registrarse</Title>
                     <Input label="Email" placeholder="Email" />
                     <Input label="Contraseña" placeholder="Contraseña" />
-                    <Button block={true} type="button">Acceder</Button>
+                    <Button block="true" type="button">Acceder</Button>
                     <Center style={{'marginTop' : '10px'}}>
                         <Link to="/">Iniciar session</Link>
                     </Center>

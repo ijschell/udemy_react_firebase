@@ -1,16 +1,15 @@
 import React, {Component} from 'react'
 import './styles.scss'
 
-export default class Input extends Component{
-    render(){
+const Input = props => {
+    const {label, input, placeholder, type} = props
 
-        const {label} = this.props
-
-        return (
-            <div>
-                <label>{label}</label>
-                <input className="input" {...this.props} />
-            </div>
-        )
-    }
+    return (
+        <div>
+            <label>{label}</label>
+            <input className="input" {...input} placeholder={placeholder} type={type}/>
+        </div>
+    )
 }
+
+export default Input

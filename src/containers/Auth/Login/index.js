@@ -2,20 +2,23 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import Card from '../../../components/Card'
 import Container from '../../../components/Container'
-import Input from '../../../components/Input'
-import Button from '../../../components/Button'
 import Title from '../../../components/Title'
 import Center from '../../../components/Center'
+import LoginForm from '../../../components/LoginForm'
+import {connect} from 'react-redux'
+import {login as loginThunk} from '../../../ducks/Users'
 
-export default class Login extends Component {
+class Login extends Component {
+
     render() {
+
+        const {login} = this.props
+
         return (
             <Container>
                 <Card>
                     <Title>Iniciar session</Title>
-                    <Input label="Email" placeholder="Email" />
-                    <Input label="Contraseña" placeholder="Contraseña" />
-                    <Button block={true} type="button">Acceder</Button>
+                    <LoginForm onSubmit={login} />                    
                     <Center style={{'marginTop' : '10px'}}>
                         <Link to="/register">Ir a registro</Link>
                     </Center>
@@ -24,3 +27,12 @@ export default class Login extends Component {
         )
     }
 }
+
+const mapStateToProps = state => state
+
+const mapDispatchToProps = dispatch => ({
+    login : payload => dispatch(loginThunk(payload)),
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)
